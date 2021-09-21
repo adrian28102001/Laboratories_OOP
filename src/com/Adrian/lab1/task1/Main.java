@@ -7,7 +7,6 @@ public class Main {
 
         Monitor monitor1 = new Monitor();
         Monitor monitor2 = new Monitor();
-        Monitor monitor3 = new Monitor();
 
         Monitor.ReadData(monitor1, monitor2);
         Monitor.CompareSpecs(monitor1, monitor2);
