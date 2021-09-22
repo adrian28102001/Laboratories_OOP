@@ -13,7 +13,7 @@ public class Student {
         System.out.println("Insert the  student's age");
         age = scanner.nextInt();
         System.out.println("Insert the  student's mark");
-        mark = scanner.nextInt();
+        mark = scanner.nextDouble();
 
     }
 }
