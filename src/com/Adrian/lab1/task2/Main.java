@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("The following program will ask you for 3 universities and the number");
+        System.out.println("The following program will ask you for 3 universities and the number ");
         System.out.println("of students students per each university and then will compute average per university \n");
         System.out.println("P.S Everything in ths program is done using the keyboard");
 
