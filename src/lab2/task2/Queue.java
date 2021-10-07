@@ -1,7 +1,7 @@
 package lab2.task2;
 
 public class Queue {
-     int[] arr;      // array to store queue elements
+     int[] array;      // array to store queue elements
      int front;      // front points to the front element in the queue
      int rear;       // rear points to the last element in the queue
      int capacity;   // maximum capacity of the queue
@@ -10,15 +10,15 @@ public class Queue {
     // Constructor to initialize a queue
     public Queue()
     {
-        arr = new int[1000];
-        capacity = 10000;
+        array = new int[21474836];
+        capacity = 21474836;
         front = 0;
         rear = -1;
         count = 0;
     }
     public Queue(int size)
     {
-        arr = new int[size];
+        array = new int[size];
         capacity = size;
         front = 0;
         rear = -1;
@@ -35,7 +35,7 @@ public class Queue {
             System.exit(1);
         }
 
-        System.out.println("Removing " + arr[front]);
+        System.out.println("Removing " + array[front]);
 
         front = (front + 1) % capacity;
         count--;
@@ -54,7 +54,7 @@ public class Queue {
         System.out.println("Inserting " + item);
 
         rear = (rear + 1) % capacity;
-        arr[rear] = item;
+        array[rear] = item;
         count++;
     }
 
@@ -66,7 +66,7 @@ public class Queue {
             System.out.println("Underflow\nProgram Terminated");
             System.exit(1);
         }
-        return arr[front];
+        return array[front];
     }
 
     // Utility function to return the size of the queue
