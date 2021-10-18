@@ -1,6 +1,6 @@
 package lab3;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         String MyText = "Find out exactly how many sentences are in your text content using this online sentence counter! " +
                 "This sentence counting tool will also give you basic information on the number of words and characters in your text. " +
@@ -8,6 +8,7 @@ public class main {
                 "type of text content. The text information you want to analyze can be many formats. This sentence counter can " +
                 "handle anything from a single string of text or to very long content composed of numerous text paragraphs separated " +
                 "by multiple line breaks.";
+
         TextManipulation text = new TextManipulation();
         text.setText(MyText);
         text.countWords();

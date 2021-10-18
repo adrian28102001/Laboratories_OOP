@@ -6,14 +6,13 @@ import java.util.stream.Collectors;
 public class TextManipulation {
     private String text = " ";
 
-
-    //setter of a text
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public String getText() {
         return text;
+    }
+    //setter of a text
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     //function to count sentences in a text
@@ -56,7 +55,6 @@ public class TextManipulation {
             }
             //Checks whether a character is a consonant
             else {
-
                 counterConsonants++;
             }
         }
