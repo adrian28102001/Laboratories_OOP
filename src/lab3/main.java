@@ -8,7 +8,7 @@ public class main {
                 "type of text content. The text information you want to analyze can be many formats. This sentence counter can " +
                 "handle anything from a single string of text or to very long content composed of numerous text paragraphs separated " +
                 "by multiple line breaks.";
-        textManipulation text = new textManipulation();
+        TextManipulation text = new TextManipulation();
         text.setText(MyText);
         text.countWords();
         text.countSentences();

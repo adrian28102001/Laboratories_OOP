@@ -3,7 +3,7 @@ package lab3;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class textManipulation {
+public class TextManipulation {
     private String text = " ";
 
 
@@ -65,7 +65,7 @@ public class textManipulation {
     }
 
     //this is the easiest method to implement it, by using power of Java libraries
-    // but there is a similar function in class wordsCounterInAText
+    // but there is a similar function in class WordsCounterInAText
     public void countTopWords() {
 
         String strArray[] = text.split(" ");

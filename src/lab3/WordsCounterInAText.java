@@ -1,6 +1,6 @@
 package lab3;
 
-public class wordsCounterInAText {
+public class WordsCounterInAText {
     //This is my implementation of counting every word frequency's in a text
 
     private String text = " ";
