@@ -13,11 +13,10 @@ public class Main {
         BufferedReader brTwo = new BufferedReader(new FileReader(secondFile));
 
         String stringOne;
-        String stringTwo;
-
         while ((stringOne = brOne.readLine()) != null) {
             System.out.println("Expression: " + stringOne + "is: " + BalancedBrackets(stringOne));
         }
+        String stringTwo;
         while ((stringTwo = brTwo.readLine()) != null) {
             System.out.println("Expression: " + stringTwo + "is: " + BalancedBrackets(stringTwo));
         }
