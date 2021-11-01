@@ -8,7 +8,7 @@ public class CheckExpression {
             if (expr.isEmpty())
                 return "Balanced";
 
-            Stack<Character> stack = new Stack<Character>();
+            Stack<Character> stack = new Stack<>();
             for (int i = 0; i < expr.length(); i++)
             {
                 char current = expr.charAt(i);
