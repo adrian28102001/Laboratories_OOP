@@ -6,8 +6,8 @@ import static lab4.CheckExpression.BalancedBrackets;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        File firstFile = new File("C:\\Users\\gherm\\IdeaProjects\\Laboratories_OOP\\src\\lab4\\one_expression.txt");
-        File secondFile = new File("C:\\Users\\gherm\\IdeaProjects\\Laboratories_OOP\\src\\lab4\\three_expressions.txt");
+        File firstFile = new File("src/lab4/one_expression.txt");
+        File secondFile = new File("src/lab4/three_expressions.txt");
 
         BufferedReader brOne = new BufferedReader(new FileReader(firstFile));
         BufferedReader brTwo = new BufferedReader(new FileReader(secondFile));

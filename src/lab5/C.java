@@ -1,2 +1,5 @@
-package lab5;public class C {
+package lab5;
+
+public class C extends B{
+    public String c = "c";
 }
