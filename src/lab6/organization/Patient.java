@@ -9,6 +9,6 @@ public class Patient extends Person {
     protected History sickness;
     protected String[] prescriptions;
     protected String[] allergies;
-    protected String[] specialRes;
+    protected String[] specialReqs;
     protected LinkedList<OperationsStaff> operationsStaffs = new LinkedList<>();
 }

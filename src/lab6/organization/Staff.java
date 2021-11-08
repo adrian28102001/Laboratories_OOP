@@ -7,5 +7,4 @@ public class Staff extends Person {
     protected String[] educations;
     protected String[] certification;
     protected String[] languages;
-    protected LinkedList<Department> departments = new LinkedList<>();
 }
