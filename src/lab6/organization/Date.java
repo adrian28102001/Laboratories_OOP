@@ -1,5 +1,7 @@
 package lab6.organization;
 
 public class Date {
-    protected String date;
+    protected int day;
+    protected int month;
+    protected int year;
 }
