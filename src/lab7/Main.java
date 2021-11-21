@@ -8,12 +8,12 @@ import static lab7.FigureController.biggestPerimeter;
 
 public class Main {
     public static void main(String[] args) {
-        Square square = new Square(10);
+        Square square = new Square(3);
         Rectangle rectangle = new Rectangle(1.4, 4.6);
         Triangle triangle = new Triangle(3, 5, 7);
         Figure circle = new Figure() { //the anonymous class
 
-            double radius = 20;
+            double radius = 1;
 
             @Override
             public double getArea() {
