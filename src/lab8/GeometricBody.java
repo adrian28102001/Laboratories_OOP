@@ -1,2 +1,7 @@
-package lab8;public class GeometricBody {
+package lab8;
+
+interface GeometricBody {
+    double getSurface();
+    double getVolume();
+    void printDetails();
 }
