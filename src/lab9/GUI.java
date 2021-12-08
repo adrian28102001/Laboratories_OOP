@@ -35,10 +35,11 @@ public class GUI extends JFrame {
 
         output = new JLabel("Output");               //Label output
         output.setPreferredSize(new Dimension(550,10));
+        output.setForeground(Color.RED);
         space = new JLabel(" ");                     //Label space so buttons go down
 
-        textField1.setBounds(50, 25, 300, 35);
-        textField2.setBounds(50, 60, 300, 35);
+        textField1.setBounds(50, 25, 100, 25);
+        textField2.setBounds(50, 60, 100, 25);
 
 
         //Buttons
@@ -52,7 +53,7 @@ public class GUI extends JFrame {
         //Panel
         panel = new JPanel();
         panel.setBounds(50, 100, 300, 300);
-        panel.setLayout(new GridLayout(4, 4, 10, 10));
+        panel.setLayout(new GridLayout(4, 4, 10, 15));
 
         //Adding to panel
         panel.add(firstInput);
@@ -96,13 +97,13 @@ public class GUI extends JFrame {
                 }
 
             } catch (StringIndexOutOfBoundsException a) {
-                output.setText("Warning: Missing Values!");
+                output.setText(("<html>Warning: Not enough values to perform the calculation!</html>").toString());
             } catch (ArithmeticException b) {
-                output.setText("Warning: Division by 0 is impossible!");
+                output.setText(("<html>Warning: Dividing to 0 it is not possible</html>").toString());
             } catch (NumberFormatException c) {
-                output.setText("Warning: Working with numbers only!");
+                output.setText("Numbers only!");
             } catch (UnluckyException d) {
-                output.setText("Ups, you got an unlucky number for the divider!");
+                output.setText(d.getMessage());
             }
             textField1.setText("");
             textField2.setText("");
